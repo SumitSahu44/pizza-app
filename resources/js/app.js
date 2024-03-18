@@ -34,3 +34,17 @@ addToCart.forEach(btn =>{
     // console.log(pizza)
    })
 })
+
+
+
+
+
+
+// remove alert message after X secound 
+const alertMsg = document.querySelector('#success-alert')
+if(alertMsg)
+{
+    setTimeout(()=>{
+        alertMsg.remove()
+    }, 2000)
+}

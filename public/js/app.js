@@ -43,6 +43,14 @@ addToCart.forEach(function (btn) {
   });
 });
 
+// remove alert message after X secound 
+var alertMsg = document.querySelector('#success-alert');
+if (alertMsg) {
+  setTimeout(function () {
+    alertMsg.remove();
+  }, 2000);
+}
+
 /***/ }),
 
 /***/ "./node_modules/base64-js/index.js":
