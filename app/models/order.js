@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema
 
+// order schema 
 const orderSchema = new Schema(
     {
              customerId: {
