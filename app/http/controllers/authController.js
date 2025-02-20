@@ -21,6 +21,7 @@ function authController()
            }
 
 
+                  // check authentication 
                passport.authenticate('local', (err, user, info) => {
                 if(err)
                 {
