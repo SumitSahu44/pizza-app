@@ -12,8 +12,7 @@ const MongoDbStore = require("connect-mongo")(session);
 const passport = require('passport')
 
 
-// database connection 
-  // mongoose.connect('mongodb://127.0.0.1:27017/pizza')
+// database connectivity 
 const url = 'mongodb://localhost/pizza';
 mongoose.connect('mongodb://127.0.0.1:27017/pizza');
 const connection = mongoose.connection;
