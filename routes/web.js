@@ -8,7 +8,7 @@ const orderController = require('../app/http/controllers/customers/orderControll
 const AdminorderController = require('../app/http/controllers/admin/orderController')
 
 
-
+// all routes 
 function initRoutes(app)
 {
     app.get('/', homeController().index)
