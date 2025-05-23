@@ -22,7 +22,8 @@
     "image": "pizza.png",
     "price": "200",
     "size": "small"
-  },{
+  },
+    {
     "_id": {
       "$oid": "5eee66a5a27a66807cf2bea5"
     },
@@ -62,4 +63,12 @@
     "image": "pizza.png",
     "price": "500",
     "size": "medium"
+  },{
+    "_id": {
+      "$oid": "5eee6692a27a66807cf2bea10"
+    },
+    "name": "Carbonara",
+    "image": "pizza.png",
+    "price": "200",
+    "size": "small"
   }]
