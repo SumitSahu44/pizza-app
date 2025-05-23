@@ -11,29 +11,20 @@ const AdminorderController = require('../app/http/controllers/admin/orderControl
 // all routes 
 function initRoutes(app)
 {
-    app.get('/', homeController().index)
-    
-   
-   // login routes 
+app.get('/', homeController().index)
+ 
+// login routes 
     app.get('/login',guest, authController().login)
     app.post('/login',authController().postLogin)
-    
-
-     // register and logout route
+ // register and logout route
     app.get('/register',guest, authController().register)
     app.get('/cart',cartController().index)
     app.post('/update-cart', cartController().update)
-      
-
     app.post('/register',authController().postRegister)
-    app.post('/logout',authController().logout)
-
-    
+    app.post('/logout',authController().logout) 
 // customer routes 
     app.post('/orders', auth, orderController().store)
     app.get('/customer/orders', auth, orderController().index)
-   
-
 //    admin routes
 app.get('/admin/orders', auth, AdminorderController().index)
 
