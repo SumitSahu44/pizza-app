@@ -4,6 +4,7 @@ const homeController = require('../app/http/controllers/homeController')
 // const orderController = require('../app/http/controllers/customers/orderController')
 const guest = require('../app/http/middleware/guest');
 const auth = require('../app/http/middleware/auth');
+
 const orderController = require('../app/http/controllers/customers/orderController');
 const AdminorderController = require('../app/http/controllers/admin/orderController')
 
@@ -27,7 +28,6 @@ app.get('/', homeController().index)
     app.get('/customer/orders', auth, orderController().index)
 //    admin routes
 app.get('/admin/orders', auth, AdminorderController().index)
-
 
 }
 
