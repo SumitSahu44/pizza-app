@@ -4,7 +4,7 @@ const app = express();
 const ejs = require('ejs');
 const path = require('path')
 const expressLayout = require('express-ejs-layouts')
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 5000
 const mongoose = require('mongoose');
 const session = require('express-session');
 const flash = require('express-flash');
@@ -20,10 +20,6 @@ const connection = mongoose.connection;
 //   console.log('database connected...');
 // })
 
-
-
-
-
 // session store 
 let mongoStore = new MongoDbStore({
   mongooseConnection: connection,
@@ -38,8 +34,6 @@ app.use(session({
   saveUninitialized: false,
   cookie: {maxAge: 1000 * 60 * 60 * 24} // 24hr valid
 }))
-
-
 
 // passport config 
 const passportInit = require('./app/config/passport')
